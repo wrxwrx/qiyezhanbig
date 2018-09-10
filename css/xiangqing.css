@@ -1,0 +1,289 @@
+/*
+* @Author: Administrator
+* @Date:   2018-08-29 08:51:37
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-08-29 17:48:45
+*/
+body{
+	background: #f4f4f4;
+}
+i{
+	font-style: normal;
+	text-decoration: none;
+}
+header{
+	width: 100%;
+	height: 60px;
+	background: white;
+	display: flex;
+	padding: 5px 20px;
+	justify-content: space-between;
+	box-shadow: 0 2px 4px rgba(0,0,0,.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+header .list{
+	width: 50px;
+    height: 50px;
+    background: black;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+header .logo{
+	width: 70px;
+	height: 50px;
+	background: white;
+}
+header .logo img{
+	width: 100%;
+	height: 100%;
+}
+aside{
+	width: 200px;
+	height:100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: white; 
+	position: fixed;
+	display: none;
+	z-index: 9;
+	box-shadow: 1px 1px 4px rgba(11,11,11,.06);
+}
+aside .img{
+	width: 100%;
+	height: 160px;
+	background: white;
+	padding: 30px;
+}
+aside .img img{
+	width: 100%;
+	height: 100%;
+}
+aside .text{
+	width: 100%;
+	background: white;
+}
+aside .text ul li a{
+	display: block;
+	/*border-left: 3px solid blue;*/
+	font-size: 12px;
+    line-height: 30px;
+    height: 30px;
+    padding-left: 30px;
+    color: black;
+    text-decoration: none;
+}
+aside .text ul{
+	position: relative;
+}
+aside .text ul .jia{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+aside .icon1{
+	width: 30px;
+	height: 30px;
+	font-size: 18px;
+	border-radius: 15px;
+	background: #dcdcdc;
+	color: #545454;
+	text-align: center;
+	line-height: 30px;
+	position: relative;
+	bottom: -135px;
+	left: 40px;
+	transition: 0.5s;
+}
+aside .icon2{
+	width: 30px;
+	height: 30px;
+	font-size: 18px;
+	border-radius: 15px;
+	background: #dcdcdc;
+	color: #545454;
+	text-align: center;
+	line-height: 30px;
+	position: relative;
+	bottom: -106px;
+	left: 80px;
+	transition: 0.5s;
+}
+.top{
+	display: none;
+	border-bottom: 1px solid rgba(33,33,33,.1);
+	width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+.top ul li{
+	height: 60px;
+	padding: 0 50px;
+	float: left;
+    color: #888;
+	border-right: 1px solid rgba(33,33,33,.1);
+    line-height: 60px;
+	margin:0;
+	border-bottom: 1px solid rgba(33,33,33,.1);
+	cursor: pointer;
+}
+.tops{
+	width: 94%;
+	height: 35px;
+	color: #00c0ff;
+	font-size: 12px;
+    line-height: 35px;
+    border: 2px solid #00c0ff;
+	text-align: center;
+}
+.tops1{
+	background: white;
+	border:none;
+	cursor: pointer;
+}
+.xiala{
+	margin-left: 3%;
+	margin-top: 90px;
+}
+.tops .list{
+	width: 30px;
+	height: 31px;
+	border-left: 1px solid #e8e8e8;
+	float: right;
+	text-align: center;
+	line-height: 35px;
+	color: black;
+	cursor: pointer;
+}
+.tops1{
+	color: #888;
+}
+.list23{
+	width: 30px;
+	height: 31px;
+	background: white;
+	float: right;
+
+}
+main{
+	background: #f4f4f4;
+	margin-top: 50px;
+	position: relative;
+}
+.bigimg{
+	position: relative;
+	top: 0;
+	left: 0;
+	display: none;
+	overflow: hidden;
+}
+main .img{
+	width: 94%;
+	margin-left: 3%;
+}
+main img{
+	width: 100%;
+}
+main .button{
+	margin-left: 3%;
+	margin-top: 50px;
+}
+main .button ul li{
+	display: inline-block;
+	width: 32%;
+	height: 60px;
+	text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    color: #999;
+	background: #e8e8e8;
+	transition: 1s;
+}
+footer{
+	width: 100%;
+	height: 100px;
+	padding: 30px 0;
+	text-align: center;
+	background-color: #333;
+	color: #fff;
+	font-size: 12px;
+	margin-top: 20px;
+}
+/* 小屏幕 col-sm */
+@media screen and (min-width: 768px){
+
+}
+/* 中屏幕  col-md-*/
+@media screen and (min-width: 992px){
+header{
+	display: none;
+}
+aside{
+	display: block;
+}
+aside .icon1:hover{
+	background: #09c0fd;
+	color: white;
+}
+aside .icon2:hover{
+	background: red;
+	color: white;
+}
+footer{
+	padding-left: 200px;
+}
+.top{
+	padding-left: 200px;
+	display: block;
+	z-index: 8;
+	background: white;
+}
+.tops{
+	display: none;
+}
+main{
+	margin-top: 100px;
+	padding-left: 220px;
+	padding-right: 20px;
+}
+main .button ul li:hover{
+	background: #09c0fd;
+}
+}
+
+/* 大屏幕 */
+@media screen and (min-width: 1200px){
+aside{
+	width: 240px;
+}
+aside .img{
+	height: 189px;
+}
+aside .text ul li a{
+	margin-bottom: 17px;
+}
+.top{
+	padding-left: 240px;
+}
+aside .icon1{
+	bottom: 0;
+}
+aside .icon2{
+	bottom: 29px;
+}
+main{
+	padding-left: 250px;
+}
+}

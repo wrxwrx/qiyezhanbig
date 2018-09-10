@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>公司简介</title>
+	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_813243_zca8n1omrok.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/xiangqing.css">
+	<script src="qyz.js"></script>
+</head>
+<body>
+<aside>
+	<div class="img">
+		<img src="img/logobig.png" alt="">
+	</div>
+	<div class="text">
+		<ul>
+			<li><a href="qyz.html">首页</a></li>
+			<li><a href="myself.html">关于我们</a></li>
+			<li><a href="wumen.html">星烁红人</a></li>
+			<li><a href="togeter.html">合作共赢</a></li>
+			<li><a href="plan.html">栏目策划</a></li>
+			<li><a href="jion.html">加入我们</a></li>
+
+			<!-- <div class="jia"></div> -->
+		</ul>
+	</div>
+	<div class="icon1 iconfont icon-QQ"></div>
+	<div class="icon2 iconfont icon-weibo"></div>
+</aside>
+	<div class="bigbig">
+		<header>
+			<div class="list iconfont icon-caidan"></div>
+			<div class="logo">
+				<img src="img/logo.png" alt="">
+			</div>
+		</header>
+
+		<div class="top">
+			<ul>
+				<li>公司简介</li>
+				<li>团队及业务</li>
+			</ul>
+		</div>
+		<div class="xiala">
+			<div class="tops"><i>公司简介</i>
+				<div class="list iconfont icon-xaingxia"></div>
+			</div>
+			<div class="tops tops1"><i>公司简介</i>
+				<div class="list23"></div>
+			</div>
+			<div class="tops tops1"><i>团队及业务</i>
+				<div class="list23"></div>
+			</div>
+		</div>
+		<main>
+			<div class="bigimg bigimg1">
+				<div class="img">
+					<img src="img/home1.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="img/home2.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="img/home3.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="img/home4.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="img/home5.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="img/home6.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="img/home7.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="img/home8.jpg" alt="">
+				</div>
+			</div>
+			<div class="bigimg bigimg2">
+				<div class="img">
+					<img src="img/team1.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="img/team2.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="img/team3.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="img/team4.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="img/team5.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="img/team6.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="img/team7.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="img/team8.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="img/team9.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="img/team10.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="img/team11.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="img/team12.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="img/team13.jpg" alt="">
+				</div>
+			</div>
+		</main>
+		<footer>武汉雅禾星烁文化传播有限公司<br>
+			湖北省武汉市江夏区百捷大厦B座11楼</footer>
+	</div>
+</body>
+</html>
+<script>
+	window.onload=function () {
+        let li=document.querySelectorAll(".top ul li");
+        let bigmig=document.querySelectorAll("main .bigimg");
+        console.log(li);
+        li[0].style.backgroundColor= "#00c0ff";
+        li[0].style.color= "white";
+        bigmig[0].style.display="block";
+        for(let i=0;i<li.length;i++){
+            li[i].onclick=function () {
+				for(let j=0;j<li.length;j++){
+				    bigmig[j].style.display="none";
+                    li[j].style.backgroundColor= "white";
+                    li[j].style.color= "#888";
+				}
+                li[i].style.backgroundColor= "#00c0ff";
+                li[i].style.color= "white";
+                bigmig[i].style.display="block";
+            }
+		}
+        let text=document.querySelector(".tops i");
+        let xldj=document.querySelector(".tops .list");
+        let tops=document.querySelectorAll(".tops1");
+        let list23=document.querySelectorAll(".list23");
+        let topst=document.querySelectorAll(".tops1 i");
+        console.log(topst);
+        for (let i=0;i<tops.length;i++){
+            tops[i].style.display="none";
+        }
+        xldj.onclick=function () {
+            for (let i=0;i<tops.length;i++){
+                if(tops[i].style.display=="none"){
+                    tops[i].style.display="block";
+                }else if(tops[i].style.display!=="none"){
+                    tops[i].style.display="none";
+                }
+                xldj.style.background="white";
+                xldj.classList.toggle("icon-xaingxia");
+                xldj.classList.toggle("icon-jiantouxiangshang");
+            }
+        }
+        for(let i=0;i<tops.length;i++){
+            tops[i].onclick=function () {
+                for(let j=0;j<tops.length;j++){
+                    tops[j].style.background="white";
+                    tops[j].style.color="#888";
+                    list23[j].style.background="white";
+                    bigmig[j].style.display="none";
+                }
+                tops[i].style.background="#00c0ff";
+                tops[i].style.color="white";
+                list23[i].style.background="#00c0ff";
+                bigmig[i].style.display="block";
+                text.innerHTML=topst[i].innerHTML;
+                for(let j=0;j<tops.length;j++){
+                    tops[j].style.display="none";}
+            }
+        }
+    }
+
+</script>

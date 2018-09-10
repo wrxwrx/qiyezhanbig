@@ -1,0 +1,124 @@
+/*
+* @Author: Administrator
+* @Date:   2018-08-29 17:00:04
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-08-29 17:56:38
+*/
+body{
+	background: white;
+}
+.main{
+	overflow: hidden;
+	padding-top: 30px;
+}
+.main ul li{
+	padding: 0 20px;
+	box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+.main ul li .imgbox img{
+	width: 100%;
+	height: 100%;
+}
+.main ul li .text{
+	padding: 20px 30px;
+}
+.main ul li .text a{
+	color: #212121;
+    font-size: 18px;
+    text-decoration: none;
+}
+.main ul li .text p{
+	margin-top: 30px;
+	color: #999;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 22px;
+}
+.main ul li .read{
+	width: 100%;
+	font-size: 11px;
+    line-height: 36px;
+    height: 36px;
+    text-align: center;
+    color: #555;
+    background-color: #f4f5f6;
+    display: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.main ul li .read:hover{
+	background: #00c0ff;
+	color: white;
+}
+/* 小屏幕 col-sm */
+@media screen and (min-width: 768px){
+
+}
+/* 中屏幕  col-md-*/
+@media screen and (min-width: 992px){
+header{
+	display: none;
+}
+aside{
+	display: block;
+}
+	aside .icon1{
+	bottom: -110px;
+	}
+	aside .icon2{
+	bottom: -80px;
+	}
+	main .more{
+	width: 240px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	margin: 35px auto;
+}
+.main{
+	padding-left: 220px;
+	padding-top: 90px;
+	background: white;
+	overflow: hidden;
+}
+.main ul li{
+	padding: 0 7px 100px;
+}
+.main ul li .text p{
+	font-size: 12px;
+}
+.main ul li .read{
+	width: 100%;
+	font-size: 11px;
+    line-height: 36px;
+    height: 36px;
+    text-align: center;
+    color: #555;
+    background-color: #f4f5f6;
+    display: block;
+}
+footer{
+	padding-left: 200px;
+}
+}
+
+/* 大屏幕 */
+@media screen and (min-width: 1200px){
+aside{
+	width: 240px;
+}
+aside .img{
+	height: 189px;
+}
+aside .text ul li a{
+	margin-bottom: 17px;
+}
+
+.main{
+	padding-left:240px;
+	padding-top: 90px;
+}
+.bog{
+	padding-left: 240px;
+}
+}
